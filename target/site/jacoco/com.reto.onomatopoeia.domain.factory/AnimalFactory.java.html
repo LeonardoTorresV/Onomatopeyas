@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AnimalFactory.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">RetoTecnico</a> &gt; <a href="index.source.html" class="el_package">com.reto.onomatopoeia.domain.factory</a> &gt; <span class="el_source">AnimalFactory.java</span></div><h1>AnimalFactory.java</h1><pre class="source lang-java linenums">package com.reto.onomatopoeia.domain.factory;
+
+import com.reto.onomatopoeia.domain.enums.AnimalType;
+import com.reto.onomatopoeia.domain.model.*;
+
+
+import java.util.HashMap;
+import java.util.Map;
+
+<span class="nc" id="L10">public class AnimalFactory {</span>
+<span class="fc" id="L11">    private static final Map&lt;String, Animal&gt; animalMap = new HashMap&lt;&gt;();</span>
+    static {
+<span class="fc" id="L13">        animalMap.put(&quot;perros&quot;, new Animal(&quot;Perros&quot;, AnimalType.TERRESTRES, &quot;Guau!&quot;));</span>
+<span class="fc" id="L14">        animalMap.put(&quot;gatos&quot;, new Animal(&quot;Gatos&quot;, AnimalType.TERRESTRES, &quot;Miau!&quot;));</span>
+<span class="fc" id="L15">        animalMap.put(&quot;patos&quot;, new Animal(&quot;Patos&quot;, AnimalType.VOLADORES, &quot;Cuác!&quot;));</span>
+<span class="fc" id="L16">        animalMap.put(&quot;gorriones&quot;, new Animal(&quot;Gorriones&quot;, AnimalType.VOLADORES, &quot;Cucú!&quot;));</span>
+<span class="fc" id="L17">        animalMap.put(&quot;peces&quot;, new Animal(&quot;Peces&quot;, AnimalType.ACUATICOS, &quot;Blub!&quot;));</span>
+<span class="fc" id="L18">        animalMap.put(&quot;ballenas&quot;, new Animal(&quot;Ballenas&quot;, AnimalType.ACUATICOS, &quot;Blub!&quot;));</span>
+<span class="fc" id="L19">    }</span>
+
+    public static Animal crearAnimal(String nombre) {
+<span class="fc" id="L22">        return animalMap.getOrDefault(nombre.toLowerCase(), new Animal(nombre, AnimalType.TERRESTRES, &quot;???&quot;) {});</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

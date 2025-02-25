@@ -1,0 +1,8 @@
+com\reto\onomatopoeia\infrastructure\config\AppConfig.class
+com\reto\onomatopoeia\domain\factory\AnimalFactory$1.class
+com\reto\onomatopoeia\domain\factory\AnimalFactory.class
+com\reto\onomatopoeia\Main.class
+com\reto\onomatopoeia\application\service\AnimalProcessor.class
+com\reto\onomatopoeia\domain\enums\AnimalType.class
+com\reto\onomatopoeia\domain\model\Animal.class
+com\reto\onomatopoeia\domain\interfaces\ISound.class

@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+RetoTecnico,com.reto.onomatopoeia.domain.factory,AnimalFactory,3,77,0,0,1,9,1,2,1,2
+RetoTecnico,com.reto.onomatopoeia.domain.factory,AnimalFactory.new Animal() {...},0,6,0,0,0,1,0,1,0,1
+RetoTecnico,com.reto.onomatopoeia,Main,28,7,1,1,7,3,2,1,1,1
+RetoTecnico,com.reto.onomatopoeia.infrastructure.config,AppConfig,0,7,0,0,0,2,0,2,0,2
+RetoTecnico,com.reto.onomatopoeia.domain.enums,AnimalType,0,21,0,0,0,2,0,1,0,1
+RetoTecnico,com.reto.onomatopoeia.domain.model,Animal,6,36,0,0,1,15,1,8,1,8
+RetoTecnico,com.reto.onomatopoeia.application.service,AnimalProcessor,1,76,2,6,1,15,2,5,0,3
